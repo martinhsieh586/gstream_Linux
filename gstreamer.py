@@ -25,7 +25,7 @@ sink = Gst.ElementFactory.make("xvimagesink", "sink")
 
 decodebin = Gst.ElementFactory.make("avdec_h264", "decodea")
 
-# rtsp = 'rtsp://admin:ai123456@192.168.0.142'
+# rtsp = 'rtsp://admin:ai123456@192.168.0.35'
 rtsp = 'rtsp://admin:ai123456@192.168.0.53'
 src.set_property("location", rtsp)
 pipe.add(src)
